@@ -60,9 +60,10 @@ public struct ErrorTextField: View {
             .frame(maxHeight: 55)
             if !errorMessage.isEmpty && error {
                 Text(errorMessage)
-                .lineLimit(nil)
-                .foregroundColor(errorColor)
-                .fixedSize(horizontal: false, vertical: true)
+                    .lineLimit(nil)
+                    .foregroundColor(errorColor)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .multilineTextAlignment(.leading)
             }
         }
     }
