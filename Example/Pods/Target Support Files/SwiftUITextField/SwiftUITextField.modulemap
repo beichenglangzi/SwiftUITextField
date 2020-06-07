@@ -1,0 +1,6 @@
+framework module SwiftUITextField {
+  umbrella header "SwiftUITextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

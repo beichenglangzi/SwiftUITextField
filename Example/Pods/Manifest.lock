@@ -1,0 +1,16 @@
+PODS:
+  - SwiftUITextField (0.1.0)
+
+DEPENDENCIES:
+  - SwiftUITextField (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftUITextField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftUITextField: 4ab7d427b972079417057b61e19702c70b44e8c0
+
+PODFILE CHECKSUM: cded57f6472dea4d118ca09176b72a25f028d3f9
+
+COCOAPODS: 1.8.3
