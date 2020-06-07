@@ -13,7 +13,7 @@ struct ContentView: View {
 
     @State var emailText: String = ""
     @State var passwordText: String = ""
-    let emailRule = ValidationRuleSet(rules: [ValidationRulePattern(pattern: EmailValidationPattern.standard, error: BasicValidationError("Invalid email, Invalid emailInvalid emailInvalid emailInvalid emailInvalid emailInvalid emailInvalid emailInvalid emailInvalid email Invalid email Invalid email Invalid email Invalid email"))])
+    let emailRule = ValidationRuleSet(rules: [ValidationRulePattern(pattern: EmailValidationPattern.standard, error: BasicValidationError("Invalid email"))])
 
     var passwordRule = ValidationRuleSet<String>(rules: [ValidationRulePattern(pattern: CaseValidationPattern.password_8char_special_upper, error: BasicValidationError("Please enter a password more then 8 characters and containing atleast one number, uppercase letter and special"))])
     @State var isEmailValid: Bool = false
