@@ -31,12 +31,10 @@
 		A02D970B248D0D8800C0A1FF /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D96F8248D0D8800C0A1FF /* ValidationRule.swift */; };
 		A02D970C248D0D8800C0A1FF /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D96F9248D0D8800C0A1FF /* ValidationError.swift */; };
 		A02D970D248D0D8800C0A1FF /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D96FA248D0D8800C0A1FF /* ValidationResult.swift */; };
-		A02D970F248D0E5600C0A1FF /* ValidatorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D970E248D0E5600C0A1FF /* ValidatorTextField.swift */; };
 		A02D9715248D0E7D00C0A1FF /* UITextField+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D9711248D0E7D00C0A1FF /* UITextField+Validator.swift */; };
 		A02D9716248D0E7D00C0A1FF /* ValidatableInterfaceElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D9712248D0E7D00C0A1FF /* ValidatableInterfaceElement.swift */; };
-		A02D9717248D0E7D00C0A1FF /* UITextView+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D9713248D0E7D00C0A1FF /* UITextView+Validator.swift */; };
-		A02D9718248D0E7D00C0A1FF /* UISlider+Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D9714248D0E7D00C0A1FF /* UISlider+Validator.swift */; };
 		A02D971A248D1FF300C0A1FF /* BasicValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D9719248D1FF300C0A1FF /* BasicValidationError.swift */; };
+		A02D971E248D581600C0A1FF /* ValidatorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D971D248D581600C0A1FF /* ValidatorTextField.swift */; };
 		C025F00936DC5EF27B795FC828A1102E /* Pods-SwiftUITextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE434E1DB310BD152A4890FDD60996 /* Pods-SwiftUITextField_Example-dummy.m */; };
 		C78149B2BBFDCB139A250B4D8637CBE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		DD903C32DCDC6C39C8CCAF48BCF9E99D /* SwiftUITextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E03082345251CBE0612BBEFC750CD307 /* SwiftUITextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -103,12 +101,10 @@
 		A02D96F8248D0D8800C0A1FF /* ValidationRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
 		A02D96F9248D0D8800C0A1FF /* ValidationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		A02D96FA248D0D8800C0A1FF /* ValidationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
-		A02D970E248D0E5600C0A1FF /* ValidatorTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTextField.swift; sourceTree = "<group>"; };
 		A02D9711248D0E7D00C0A1FF /* UITextField+Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Validator.swift"; sourceTree = "<group>"; };
 		A02D9712248D0E7D00C0A1FF /* ValidatableInterfaceElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatableInterfaceElement.swift; sourceTree = "<group>"; };
-		A02D9713248D0E7D00C0A1FF /* UITextView+Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Validator.swift"; sourceTree = "<group>"; };
-		A02D9714248D0E7D00C0A1FF /* UISlider+Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+Validator.swift"; sourceTree = "<group>"; };
 		A02D9719248D1FF300C0A1FF /* BasicValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicValidationError.swift; sourceTree = "<group>"; };
+		A02D971D248D581600C0A1FF /* ValidatorTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidatorTextField.swift; path = SwiftUITextField/Classes/ValidatorTextField.swift; sourceTree = "<group>"; };
 		A0CFC6EBBEC10B6652BC89DFC36455C7 /* Pods-SwiftUITextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUITextField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A988EFC04A6FCD139438F464B87D0209 /* Pods-SwiftUITextField_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUITextField_Tests-Info.plist"; sourceTree = "<group>"; };
 		AF4B77E95DCAD02205B80B7FA4C46975 /* SwiftUITextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftUITextField-dummy.m"; sourceTree = "<group>"; };
@@ -250,8 +246,6 @@
 			children = (
 				A02D9711248D0E7D00C0A1FF /* UITextField+Validator.swift */,
 				A02D9712248D0E7D00C0A1FF /* ValidatableInterfaceElement.swift */,
-				A02D9713248D0E7D00C0A1FF /* UITextView+Validator.swift */,
-				A02D9714248D0E7D00C0A1FF /* UISlider+Validator.swift */,
 			);
 			path = "UIKit+Validator";
 			sourceTree = "<group>";
@@ -288,9 +282,9 @@
 		D03C24C6CF5EF2FD11599DD28FD351DA /* SwiftUITextField */ = {
 			isa = PBXGroup;
 			children = (
+				A02D971D248D581600C0A1FF /* ValidatorTextField.swift */,
 				A02D96E4248D0D8800C0A1FF /* Validator */,
 				A02D96E0248D01D900C0A1FF /* SwiftUITextField.swift */,
-				A02D970E248D0E5600C0A1FF /* ValidatorTextField.swift */,
 				37AAC45FC96CF976201D28700A8237F6 /* Pod */,
 				E52343DE7B5DBAB189C28BD14C118841 /* Support Files */,
 			);
@@ -500,13 +494,12 @@
 				A02D970C248D0D8800C0A1FF /* ValidationError.swift in Sources */,
 				A02D9709248D0D8800C0A1FF /* ValidationRuleCondition.swift in Sources */,
 				A02D96FD248D0D8800C0A1FF /* CaseValidationPattern.swift in Sources */,
+				A02D971E248D581600C0A1FF /* ValidatorTextField.swift in Sources */,
 				A02D96FE248D0D8800C0A1FF /* ValidationPattern.swift in Sources */,
 				A02D96E1248D01D900C0A1FF /* SwiftUITextField.swift in Sources */,
 				A02D96FC248D0D8800C0A1FF /* ContainsNumberValidationPattern.swift in Sources */,
 				A02D9715248D0E7D00C0A1FF /* UITextField+Validator.swift in Sources */,
 				A02D9716248D0E7D00C0A1FF /* ValidatableInterfaceElement.swift in Sources */,
-				A02D9718248D0E7D00C0A1FF /* UISlider+Validator.swift in Sources */,
-				A02D9717248D0E7D00C0A1FF /* UITextView+Validator.swift in Sources */,
 				A02D96FF248D0D8800C0A1FF /* Validator.swift in Sources */,
 				A02D9704248D0D8800C0A1FF /* ValidationRuleSet.swift in Sources */,
 				A02D9703248D0D8800C0A1FF /* ValidationRulePattern.swift in Sources */,
@@ -519,7 +512,6 @@
 				A02D96FB248D0D8800C0A1FF /* EmailValidationPattern.swift in Sources */,
 				73C55D39E9EE0ADC9CD0D62BB63079C2 /* SwiftUITextField-dummy.m in Sources */,
 				A02D971A248D1FF300C0A1FF /* BasicValidationError.swift in Sources */,
-				A02D970F248D0E5600C0A1FF /* ValidatorTextField.swift in Sources */,
 				A02D9702248D0D8800C0A1FF /* ValidationRulePaymentCard.swift in Sources */,
 				A02D9706248D0D8800C0A1FF /* ValidationRuleContains.swift in Sources */,
 				A02D970B248D0D8800C0A1FF /* ValidationRule.swift in Sources */,
