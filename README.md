@@ -1,6 +1,5 @@
 # SwiftUITextField
 
-[![CI Status](https://img.shields.io/travis/Nishith Singh/SwiftUITextField.svg?style=flat)](https://travis-ci.org/Nishith Singh/SwiftUITextField)
 [![Version](https://img.shields.io/cocoapods/v/SwiftUITextField.svg?style=flat)](https://cocoapods.org/pods/SwiftUITextField)
 [![License](https://img.shields.io/cocoapods/l/SwiftUITextField.svg?style=flat)](https://cocoapods.org/pods/SwiftUITextField)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftUITextField.svg?style=flat)](https://cocoapods.org/pods/SwiftUITextField)
