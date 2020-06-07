@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftUITextField_Example' do
+  pod 'SwiftUITextField', :path => '../'
+
+  target 'SwiftUITextField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
