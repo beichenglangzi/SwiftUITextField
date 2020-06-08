@@ -50,6 +50,7 @@ struct ValidatorTextField: UIViewRepresentable {
     var keyboardType: UIKeyboardType
     var onTextChange: (String) -> () = {(_) in }
     var textContentType: UITextContentType = .name
+    var autocapitalizationType: UITextAutocapitalizationType = .sentences
     @State private var maxWidth: CGFloat = 0
 
 
@@ -69,6 +70,7 @@ struct ValidatorTextField: UIViewRepresentable {
         textField.placeholder = placeHolder
         textField.textContentType = textContentType
         textField.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        textField.autocapitalizationType = autocapitalizationType
         return textField
     }
 

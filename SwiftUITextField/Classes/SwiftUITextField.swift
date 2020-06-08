@@ -9,24 +9,25 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 public struct ErrorTextField: View {
-    var borderColor: Color
-    var errorColor: Color
-    var placeHolder: String
+    let borderColor: Color
+    let errorColor: Color
+    let placeHolder: String
     var validColor: Color? = nil
-    var keyboardType: UIKeyboardType
-    var text: Binding<String>
-    var onEditingChanged: () -> Void
-    var onCommit: () -> Void
-    var leftImage: Image?
-    var isSecure: Bool
+    let keyboardType: UIKeyboardType
+    let text: Binding<String>
+    let onEditingChanged: () -> Void
+    let onCommit: () -> Void
+    let leftImage: Image?
+    let isSecure: Bool
     var validationRules: ValidationRuleSet<String>? = nil
-    var isInputValid: Binding<Bool>?
-    var textContentType: UITextContentType
+    let isInputValid: Binding<Bool>?
+    let textContentType: UITextContentType
+    let autoCapitalizationType: UITextAutocapitalizationType
     @State private var error: Bool = false
     @State private var showValidColor: Bool = false
     @State private var errorMessage: String = ""
 
-    public init(_ text: Binding<String>,isInputValid: Binding<Bool>? = nil, borderColor: Color = .gray, errorColor: Color = .red, placeHolder: String = "Text", keyboardType: UIKeyboardType = .default, onEditingChanged: @escaping () -> Void = { }, onCommit: @escaping () -> Void = {}, leftImage: Image? = nil, isSecure: Bool = false, validationRules: ValidationRuleSet<String>? = nil, validColor: Color? = nil, textContentType: UITextContentType = .name) {
+    public init(_ text: Binding<String>,isInputValid: Binding<Bool>? = nil, borderColor: Color = .gray, errorColor: Color = .red, placeHolder: String = "Text", keyboardType: UIKeyboardType = .default, onEditingChanged: @escaping () -> Void = { }, onCommit: @escaping () -> Void = {}, leftImage: Image? = nil, isSecure: Bool = false, validationRules: ValidationRuleSet<String>? = nil, validColor: Color? = nil, textContentType: UITextContentType = .name,autoCapitalizationType: UITextAutocapitalizationType = .sentences) {
         self.borderColor = borderColor
         self.errorColor = errorColor
         self.placeHolder = placeHolder
@@ -40,6 +41,7 @@ public struct ErrorTextField: View {
         self.validColor = validColor
         self.isInputValid = isInputValid
         self.textContentType = textContentType
+        self.autoCapitalizationType = autoCapitalizationType
     }
 
     public var body: some View {
@@ -53,7 +55,7 @@ public struct ErrorTextField: View {
                         .padding(.leading, 8)
 
                 }
-                ValidatorTextField(placeHolder: placeHolder, isSecure: isSecure, didEndEditing: onTextFieldCommit, text: text, keyboardType: keyboardType, onTextChange: onTextChanged, textContentType: textContentType)
+                ValidatorTextField(placeHolder: placeHolder, isSecure: isSecure, didEndEditing: onTextFieldCommit, text: text, keyboardType: keyboardType, onTextChange: onTextChanged, textContentType: textContentType, autocapitalizationType: autoCapitalizationType)
                     .padding()
             }
             .overlay(RoundedRectangle(cornerRadius: 5).stroke(error ? errorColor : showValidColor ? validColor! : borderColor, lineWidth: 0.3))
